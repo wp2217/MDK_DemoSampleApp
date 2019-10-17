@@ -1,0 +1,80 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Customer Details(顾客详情)",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"BodyText": "{DateOfBirth}",
+						"Description": "{CustomerId}",
+						"DetailImage": "/DemoSampleApp/Images/WIN_20160120_205707.JPG",
+						"DetailImageIsCircular": false,
+						"Footnote": "{EmailAddress}",
+						"HeadlineText": "{LastName}",
+						"PreserveIconStackSpacing": true,
+						"ProgressIndicator": "inProgress",
+						"StatusText": "{PhoneNumber}",
+						"Subhead": "{FirstName}"
+					},
+					"Target": "",
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Address",
+							"Target": "",
+							"Value": "{{#Property:HouseNumber}} {{#Property:Street}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "City",
+							"Target": "",
+							"Value": "{City}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Postal Code",
+							"Target": "",
+							"Value": "{PostalCode}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Country",
+							"Target": "",
+							"Value": "{Country}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Target": "",
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"Target": "",
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "Customers_Detail",
+	"_Type": "Page"
+}
